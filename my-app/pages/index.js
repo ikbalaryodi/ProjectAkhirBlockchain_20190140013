@@ -152,7 +152,7 @@ export default function Home() {
       if (joinedWhitelist) {
         return (
           <div className={styles.description}>
-            Thanks for joining the Whitelist!
+            Terima Kasih Sudah Bergabung!
           </div>
         );
       } else if (loading) {
@@ -160,14 +160,14 @@ export default function Home() {
       } else {
         return (
           <button onClick={addAddressToWhitelist} className={styles.button}>
-            Join the Whitelist
+            Terima Kasih Sudah Bergabung
           </button>
         );
       }
     } else {
       return (
         <button onClick={connectWallet} className={styles.button}>
-          Connect your wallet
+          Sambungkan Dompet Anda
         </button>
       );
     }
@@ -199,22 +199,22 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <h1 className={styles.title}>Selamat Datang Di Crypto UMY!</h1>
           <div className={styles.description}>
-            Its an NFT collection for developers in Crypto.
+          Ini adalah koleksi NFT untuk pengembang di Crypto.
           </div>
           <div className={styles.description}>
-            {numberOfWhitelisted} have already joined the Whitelist
+            {numberOfWhitelisted} telah bergabung dalam whitelist
           </div>
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./crypto-devs.svg" />
+          <img className={styles.image} src="./fox-1419594.svg" />
         </div>
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        &#10084; Indonesia 
       </footer>
     </div>
   );
